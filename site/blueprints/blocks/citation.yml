@@ -18,6 +18,13 @@ fields:
   contenu:
     type: writer
     label: Contenu
+    inline: true
+    nodes:
+      - paragraph
+    marks:
+      - bold
+      - italic
+    help: Affiché en titre (h2) — pas de mise en page bloc (listes, etc.)
   signature:
     type: text
     label: Signature (auteur·ice·x)

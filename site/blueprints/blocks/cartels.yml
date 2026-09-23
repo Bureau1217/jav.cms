@@ -5,6 +5,17 @@ preview: fields
 wysiwyg: true
 
 fields:
+  title:
+    type: writer
+    label: Titre
+    inline: true
+    width: 1/2
+    nodes:
+      - paragraph
+    marks:
+      - italic
+    help: Titre de la section
+
   cards:
     type: structure
     fields:
@@ -17,11 +28,18 @@ fields:
           - paragraph
         marks:
           - italic
-        help: Titre de la section
+        help: Titre de la carte
+
+      format:
+        type: text
+        label: Format
+        width: 1/2
+        help: Libellé affiché en haut à gauche de la carte (ex. "Cours individuel", "Collectif")
 
       tags:
         type: tags
         label: Tags
+        help: Pastille(s) affichée(s) en haut à droite de la carte
 
       description:
         type: writer

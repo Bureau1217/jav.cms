@@ -26,3 +26,15 @@ fields:
       contenu:
         label: Contenu
         type: writer
+
+  link:
+    type: object
+    label: Lien
+    help: Url et texte du lien affiché à côté du titre (optionnel)
+    fields:
+      link_url:
+        type: link
+        label: Lien
+      link_text:
+        type: text
+        label: Texte du lien

@@ -26,6 +26,14 @@ fields:
       - italic
 
   link:
-    type: link
-    label: Lien
+    type: object
+    label: Bouton
+    help: Url et texte du bouton
+    fields:
+      link_url:
+        type: link
+        label: Lien
+      link_text:
+        type: text
+        label: Texte du bouton
 

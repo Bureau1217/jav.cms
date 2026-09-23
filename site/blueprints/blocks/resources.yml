@@ -29,7 +29,7 @@ fields:
         empty: false
         options:
           file: Fichier PDF
-          link: Lien
+          link: Dossier
       resource_file:
         type: files
         label: Fichier PDF

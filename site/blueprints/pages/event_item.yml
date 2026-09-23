@@ -36,3 +36,10 @@ columns:
       event_description:
         type: writer
         label: Description
+      event_gallery:
+        type: files
+        label: Galerie
+        help: Photos supplémentaires affichées dans la section "Galerie" de la page de l'événement
+        query: page.images
+        uploads: true
+        layout: cards
