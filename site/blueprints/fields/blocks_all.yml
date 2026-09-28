@@ -11,6 +11,8 @@ fieldsets:
   list: true
   partners: true
   planning: true
+  puce: true
+  qualiopi: true
   resources: true
   teachers: true
   testimonials: true

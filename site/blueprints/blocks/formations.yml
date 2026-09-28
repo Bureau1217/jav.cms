@@ -16,6 +16,46 @@ fields:
       - italic
     help: Titre de la section
 
+  formation_professionnelle:
+    type: object
+    label: Carte — Formation Professionnelle
+    help: Contenu affiché sous l'image de la carte "Formation Professionnelle" (l'image vient de la page elle-même)
+    fields:
+      tag:
+        type: text
+        label: Petit texte (au-dessus du titre)
+      title:
+        type: text
+        label: Titre
+      description:
+        type: writer
+        label: Description
+        inline: false
+        nodes:
+          - paragraph
+        marks:
+          - italic
+
+  pratique_amateur:
+    type: object
+    label: Carte — Pratique Amateur
+    help: Contenu affiché sous l'image de la carte "Pratique Amateur" (l'image vient de la page elle-même)
+    fields:
+      tag:
+        type: text
+        label: Petit texte (au-dessus du titre)
+      title:
+        type: text
+        label: Titre
+      description:
+        type: writer
+        label: Description
+        inline: false
+        nodes:
+          - paragraph
+        marks:
+          - italic
+
   help:
     type: info
-    text: Ce block ne contient aucun champ éditable. Il sert uniquement de point d'ancrage pour afficher dynamiquement le composant "formations" en front.
+    text: Seule l'image de chaque carte vient de la page "Formation Professionnelle" / "Pratique Amateur" elle-même — tout le reste (petit texte, titre, description) est éditable ci-dessus.

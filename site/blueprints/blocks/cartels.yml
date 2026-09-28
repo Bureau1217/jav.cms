@@ -44,3 +44,10 @@ fields:
       description:
         type: writer
         label: Description
+        nodes:
+          - paragraph
+          - bulletList
+          - orderedList
+        marks:
+          - bold
+          - italic

@@ -1,0 +1,77 @@
+blueprint: block
+name: Qualiopi
+icon: badge
+preview: fields
+wysiwyg: true
+
+fields:
+  logo:
+    type: files
+    label: Logo
+    multiple: false
+    query: page.images
+    uploads: true
+
+  title:
+    type: writer
+    label: Titre
+    inline: true
+    nodes:
+      - paragraph
+    marks:
+      - bold
+      - italic
+
+  subtitle:
+    type: writer
+    label: Sous-titre
+    inline: true
+    nodes:
+      - paragraph
+    marks:
+      - bold
+      - italic
+
+  description:
+    type: writer
+    label: Description
+    inline: false
+    nodes:
+      - paragraph
+    marks:
+      - bold
+      - italic
+
+  button_text:
+    type: text
+    label: Texte du bouton
+    default: Consultable ici
+
+  pdf:
+    type: files
+    label: Fichier PDF
+    multiple: false
+    query: page.files.filterBy("extension", "pdf")
+    uploads:
+      template: pdf
+    help: Le bouton télécharge ce fichier
+
+  contact_label:
+    type: text
+    label: "Contact — intitulé"
+    placeholder: "Contact Formation Professionnelle"
+
+  contact_name:
+    type: text
+    label: "Contact — nom et fonction"
+    placeholder: "Nicolas Demars, responsable pédagogique"
+
+  contact_email_text:
+    type: text
+    label: "Contact — e-mail (texte affiché)"
+    placeholder: coordination@jazzactionvalence.com
+
+  contact_email_link:
+    type: link
+    label: "Contact — e-mail (lien)"
+    help: L'URL (ou adresse e-mail) vers laquelle le texte ci-dessus renvoie

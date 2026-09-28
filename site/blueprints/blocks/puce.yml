@@ -1,6 +1,6 @@
 blueprint: block
-name: Contenu texte
-icon: text
+name: Puce
+icon: list-bullet
 preview: fields
 wysiwyg: true
 
@@ -9,16 +9,15 @@ fields:
     type: writer
     label: Titre
     inline: true
-    width: 1/2
     nodes:
       - paragraph
     marks:
+      - bold
       - italic
-    help: Titre de la section
 
   text:
-    label: Texte
     type: writer
+    label: Texte
     inline: false
     nodes:
       - paragraph
@@ -27,4 +26,7 @@ fields:
     marks:
       - bold
       - italic
-    placeholder: field.blocks.text.placeholder
+
+  tags:
+    type: tags
+    label: Tags
