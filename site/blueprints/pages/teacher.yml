@@ -13,7 +13,7 @@ columns:
             type: tags
             label: Fonction
             options:
-              - enseignant·e·x
+              - enseignant·e
               - Équipe Administrative
           teachers_photo:
             type: files
