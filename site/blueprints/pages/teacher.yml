@@ -24,6 +24,9 @@ columns:
           teachers_bio:
             type: writer
             label: Présentation
+          teachers_email:
+            type: text
+            label: E-mail
           teachers_website:
             type: url
             label: Site web
