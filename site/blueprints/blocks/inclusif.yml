@@ -1,0 +1,27 @@
+blueprint: block
+name: Inclusif
+icon: image
+preview: fields
+wysiwyg: true
+
+fields:
+  title:
+    type: writer
+    label: Titre
+    inline: true
+    width: 1/2
+    nodes:
+      - paragraph
+    marks:
+      - italic
+    help: Titre de la section
+
+  image:
+    extends: fields/image
+    label: Image
+
+  content:
+    extends: fields/blocks_all
+    fieldsets:
+      array-layout: true
+    label: Contenu

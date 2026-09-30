@@ -43,6 +43,7 @@ columns:
             fieldsets:
               section: true
               array-layout : true
+              inclusif: true
 
   sidebar:
     width: 1/3
