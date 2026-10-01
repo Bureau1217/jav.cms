@@ -13,6 +13,9 @@ columns:
             type: structure
             label: Étudiant·e·xs ou alumni·e·xs
             fields:
+              testimony_item_name:
+                type: text
+                label: Nom
               testimony_item_role:
                 type: tags
                 label: statue

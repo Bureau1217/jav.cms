@@ -1,6 +1,6 @@
 blueprint: page
 
-title: Fiche Enseignant·e·x & Responsable·x
+title: Fiche Enseignant·e & Permanent·e
 
 columns:
   main:
@@ -14,6 +14,7 @@ columns:
             label: Fonction
             options:
               - enseignant·e
+              - permanent·e
               - Équipe Administrative
           teachers_photo:
             type: files
