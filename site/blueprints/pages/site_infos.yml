@@ -32,9 +32,6 @@ columns:
           phone_number:
             type: text
             label: Numéro de téléphone
-          fax:
-            type: text
-            label: Fax
           email:
             type: text
             label: Email
@@ -44,6 +41,46 @@ columns:
             label: Pages
             help: Pages a afficher dans le bas de page
 
+          social_instagram:
+            type: url
+            label: Instagram
+            help: Laisser vide pour ne pas afficher le lien dans le pied de page
+          social_facebook:
+            type: url
+            label: Facebook
+            help: Laisser vide pour ne pas afficher le lien dans le pied de page
+          social_youtube:
+            type: url
+            label: Youtube
+            help: Laisser vide pour ne pas afficher le lien dans le pied de page
+
+          footer_link_accessibilite:
+            type: link
+            label: "Pied de page — Accessibilité"
+            help: Page vers laquelle "Accessibilité" renvoie dans le pied de page. Laisser vide pour ne pas afficher ce lien.
+          footer_link_tarifs:
+            type: link
+            label: "Pied de page — Tarifs et Financement"
+            help: Page vers laquelle "Tarifs et Financement" renvoie dans le pied de page. Laisser vide pour ne pas afficher ce lien.
+          footer_link_mentions:
+            type: link
+            label: "Pied de page — Mentions légales"
+            help: Page vers laquelle "Mentions légales" renvoie dans le pied de page. Laisser vide pour ne pas afficher ce lien.
+          footer_link_confidentialite:
+            type: link
+            label: "Pied de page — Politique de confidentialité"
+            help: Page vers laquelle "Politique de confidentialité" renvoie dans le pied de page. Laisser vide pour ne pas afficher ce lien.
+
+          accessibility_text:
+            type: writer
+            label: "Pied de page — texte accessibilité"
+            help: Petit texte affiché tout en bas du pied de page
+            nodes:
+              - paragraph
+            marks:
+              - bold
+              - italic
+              - link
 
           infos_bands:
             type: structure
