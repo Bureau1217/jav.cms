@@ -1,0 +1,11 @@
+type: files
+
+title: Fichier
+
+accept: true
+
+fields:
+  infos:
+    type: info
+    theme: passive
+    text: type de fichier par default, pas d'options supplémentaires
