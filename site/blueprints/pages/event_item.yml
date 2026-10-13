@@ -28,6 +28,7 @@ columns:
   - width: 2/3
     fields:
       event_cover:
+        required: true
         type: files
         label: Image de couverture
         multiple: false
