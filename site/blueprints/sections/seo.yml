@@ -1,0 +1,22 @@
+# Référencement (SEO) — réutilisé dans l'onglet "SEO" des pages "Page" et
+# "Événement". Tous les champs sont facultatifs : à vide, le site retombe sur
+# le titre de la page, puis son sous-titre / sa description, puis sur la
+# description par défaut définie dans "Informations globales".
+# L'image de partage (Open Graph) est la même pour tout le site : elle se
+# règle une seule fois dans "Informations globales".
+type: fields
+fields:
+  seo_title:
+    type: text
+    label: Titre pour Google
+    help: Titre affiché dans les résultats de recherche et l'onglet du navigateur. "- JAV" est ajouté automatiquement. Idéalement moins de 60 caractères. Laisser vide pour utiliser le titre de la page.
+    maxlength: 70
+    counter: true
+  seo_description:
+    type: textarea
+    label: Méta-description
+    help: Court texte affiché sous le titre dans les résultats Google (entre 120 et 160 caractères). Laisser vide pour utiliser le sous-titre de la page.
+    buttons: false
+    rows: 3
+    maxlength: 200
+    counter: true
